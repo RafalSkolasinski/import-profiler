@@ -116,7 +116,7 @@ class ImportProfilerContext(object):
         self.disable()
 
     def _profiled_import(self, name, globals=None, locals=None, fromlist=None,
-                         level=-1, *a, **kw):
+                         level=0, *a, **kw):
         if globals is None:
             context_name = None
         else:
